@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  reactapp:
+    build: ./react-app-assi
+    container_name: reactapp_c
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./react-app-assi/app
+      - ./react-app-assi/node_modules
+    stdin_open: true
+    tty: true
