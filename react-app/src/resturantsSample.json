@@ -1,0 +1,39 @@
+{
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Terrace No.9",
+          "description":""
+        },
+        "geometry": {
+          "coordinates": [46.666083,24.779329],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Mangoosha Circle",
+          "description": ""
+        },
+        "geometry": {
+          "coordinates": [46.657671,24.835420],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "TAMEESA",
+          "description": ""
+        },
+        "geometry": {
+          "coordinates": [46.639475,24.830566],
+          "type": "Point"
+        }
+      }
+   
+    ],
+    "type": "FeatureCollection"
+  }
