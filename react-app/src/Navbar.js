@@ -1,15 +1,5 @@
 import React from "react";
-
 import { Container, Row, Col} from "react-bootstrap";
-
-
-import { useRef } from "react";
-import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-
-import { useRef } from "react";
-import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";

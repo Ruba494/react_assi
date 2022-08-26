@@ -1,5 +1,4 @@
 import React from 'react'
-
 import MenuItem from './MenuItem'
 import { useState, useEffect } from 'react';
 
@@ -37,8 +36,7 @@ function Home() {
     </div>
     
     </>
-  );
-
-};
+  )
+}
 
 export default Home

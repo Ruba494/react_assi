@@ -5,12 +5,12 @@ import {
   Col,
   Container,
   Button,
-  Stack,
   InputGroup,
   Form,
   Dropdown,
   DropdownButton,
 } from "react-bootstrap";
+
 import "./MenuItem.css";
 import Modal from "./Modal";
 
@@ -61,11 +61,12 @@ function MenuItem({ menuItems }) {
       </Container>
       
       <Container className="m-3 ">
-        <Stack direction="horizontal" className="" gap={3}>
+        <div className="hstack gap-3">
           <h1 className="">Breakfast</h1>
           <div className="vr" />
           <p>{search(menuItems).length}</p>
-        </Stack>
+        </div>
+
       </Container>
       
       <Container className=" ">
@@ -84,12 +85,12 @@ function MenuItem({ menuItems }) {
                         </Col>
                         <Col sm={8}>
                           <Card.Body>
-                            <Stack gap={4}>
-                              <Stack gap={0}>
+                            <div className="vstack gap-4" >
+                              <div  className="vstack gap-0" >
                                 <Card.Title>{Item.menuname}</Card.Title>
                                 <Card.Subtitle>200 Cal</Card.Subtitle>
-                              </Stack>
-                              <Stack direction="horizontal" className="mt-2">
+                              </div>
+                              <div className="hstack mt-2">
                                 <Card.Subtitle className="me-auto">
                                   {Item.menuname.length + 10 + " SR"}
                                 </Card.Subtitle>
@@ -100,8 +101,8 @@ function MenuItem({ menuItems }) {
                                 <Button onClick={() => setCount(count - 1)}>
                                   -
                                 </Button>
-                              </Stack>
-                            </Stack>
+                              </div>
+                            </div>
                           </Card.Body>
                         </Col>
                       </Row>

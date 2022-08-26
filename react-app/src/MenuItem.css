@@ -76,7 +76,21 @@ border-color: #F4CBDF;
     color: black;
     background-color: white;
     border-color: #CED4DA;
-    width: 16%;
-    
+    width: 200px;
+    border-radius: 0%;
 }
 
+.dropdown-menu{
+    width: 200px;
+}
+
+
+
+.input-group .btn:focus {
+    box-shadow: none;
+}
+
+.input-group .form-control:focus{
+    box-shadow: none;
+    border-color: #CED4DA;
+}

@@ -1,25 +1,15 @@
 import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
-
 import MapTab from './MapTab';
-
-
-import Map from './Map';
-
-import Map from './Map';
-
 import { Route, Routes } from "react-router-dom"
-
 
 function App() {
   return (
     <>
-
     <Navbar />
     <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/map" element={<MapTab />} />
       </Routes>
       
