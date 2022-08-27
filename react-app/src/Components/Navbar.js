@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col} from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.css";
+import "../Style/Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {

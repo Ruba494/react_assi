@@ -1,8 +1,6 @@
 import React, { useState,setState } from "react";
 import {
-  Card,
   Row,
-  Col,
   Container,
   Button,
   InputGroup,
@@ -11,14 +9,14 @@ import {
   DropdownButton,
 } from "react-bootstrap";
 
-import "./MenuItem.css";
-import ItemCard from "./ItemCard";
-import ItemModal from "./ItemModal";
+import "../Style/DarkMode.css";
+import "../Style/MenuItem.css";
+import ItemCard from "../Components/ItemCard";
+
 
 
 function MenuItem({ menuItems }) {
   const [query, setQuery] = useState("");
-  
   
   
 
@@ -34,16 +32,16 @@ function MenuItem({ menuItems }) {
     <>
       <Container className="md me-5 mb-5">
         <InputGroup className="search-bar  justify-content-md-center ">
+          
           <Form.Control
             placeholder="Search"
             onChange={(e) => setQuery(e.target.value)}
           />
+          
           <DropdownButton
             variant="outline-secondary"
             title="Filter"
-            id="input-group-dropdown-2"
             align="end"
-           
           >
             <Dropdown.Item onClick={(e) => setQuery("soup")}>
               Soup
@@ -70,7 +68,7 @@ function MenuItem({ menuItems }) {
         <Container className="m-3 ">
           <Row xs={1} md={3} className="g-4">
             {search(menuItems)
-              .slice(0, 12)
+              .slice(0, 9)
               .map((Item) => {
                 return (
                   <ItemCard key={Item._id}  

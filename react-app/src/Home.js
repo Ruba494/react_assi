@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuItem from './MenuItem'
+import MenuItem from './Components/MenuItem'
 import { useState, useEffect } from 'react';
 
 function Home() {

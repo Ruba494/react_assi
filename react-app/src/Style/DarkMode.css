@@ -1,0 +1,46 @@
+#dark,#dark html,#dark body{
+    background-color: #111315;
+}
+
+  
+#dark .mapboxgl-popup .mapboxgl-popup-content{
+    border-color: #2a2c2d;
+    background-color: #2a2c2d;
+    color: white;
+  }
+  
+  #dark .mapboxgl-popup .mapboxgl-popup-content .btn{
+    background-color: #2a2c2d;
+    color: #f4cbdf;
+  }
+
+
+
+
+#dark h1{
+    color: white;
+}
+
+#dark .card , #dark .search-bar .dropdown .btn,#dark .input-group .form-control, #dark .input-group .form-control::placeholder {
+  border-color: #2a2c2d;
+  background-color: #2a2c2d;
+  color: white;
+}
+
+
+#dark .card .card-body .hstack .card-subtitle,#dark .card .card-body .hstack .card-text {
+    color: gray;
+}
+
+#dark .card .card-body .hstack .btn {
+    background-color: #2a2c2d;
+    color: #f4cbdf;
+}
+#dark .input-group .btn{
+    border-color: #f4cbdf;
+    color: black;
+}
+
+#dark .toggle-btn svg{
+  color: #2a2c2d;
+}

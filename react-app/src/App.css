@@ -1,4 +1,15 @@
-.App {
-  background-color: #F5F6F8;
-}
+.toggle-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.toggle-btn svg{
+   margin: 5px;
+    transform: rotate(-90deg);
+    color: #000;
+}

@@ -1,11 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Button, InputGroup, Form } from "react-bootstrap";
 import "mapbox-gl/dist/mapbox-gl.css";
-import "./MapTab.css";
-import "./MenuItem.css";
+
+import "./Style/DarkMode.css";
+import "./Style/MapTab.css";
+import "./Style/MenuItem.css";
+
 
 import geoJson from "./resturantsSample.json";
-
 import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken =
@@ -63,7 +65,7 @@ const MapTab = () => {
       // Copy coordinates array.
       const coordinates = e.features[0].geometry.coordinates.slice();
       const title = e.features[0].properties.title;
-      console.log(coordinates);
+      
 
       new mapboxgl.Popup()
         .setLngLat(coordinates)
