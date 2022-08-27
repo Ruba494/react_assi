@@ -12,11 +12,13 @@ import {
 } from "react-bootstrap";
 
 import "./MenuItem.css";
-import Modal from "./Modal";
+import ItemCard from "./ItemCard";
+import ItemModal from "./ItemModal";
+
 
 function MenuItem({ menuItems }) {
   const [query, setQuery] = useState("");
-  const [count, setCount] = useState(0);
+  
   
   
 
@@ -28,13 +30,8 @@ function MenuItem({ menuItems }) {
     );
   }
  
-
-
-
-
   return (
     <>
-   
       <Container className="md me-5 mb-5">
         <InputGroup className="search-bar  justify-content-md-center ">
           <Form.Control
@@ -76,43 +73,18 @@ function MenuItem({ menuItems }) {
               .slice(0, 12)
               .map((Item) => {
                 return (
-                  <Col>
-                    <Card >
-                      <Row className="">
-                        <Col sm={4}>
-                          {" "}
-                          <Card.Img src={Item.images[0]} />
-                        </Col>
-                        <Col sm={8}>
-                          <Card.Body>
-                            <div className="vstack gap-4" >
-                              <div  className="vstack gap-0" >
-                                <Card.Title>{Item.menuname}</Card.Title>
-                                <Card.Subtitle>200 Cal</Card.Subtitle>
-                              </div>
-                              <div className="hstack mt-2">
-                                <Card.Subtitle className="me-auto">
-                                  {Item.menuname.length + 10 + " SR"}
-                                </Card.Subtitle>
-                                <Button onClick={() => setCount(count + 1)}>
-                                  +
-                                </Button>{" "}
-                                <Card.Text>{count}</Card.Text>
-                                <Button onClick={() => setCount(count - 1)}>
-                                  -
-                                </Button>
-                              </div>
-                            </div>
-                          </Card.Body>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
+                  <ItemCard key={Item._id}  
+                  menuname={Item.menuname}
+                  image={Item.images[Math.floor(Math.random() * (2 - 0 + 1)) + 0]}
+                  price={Item.menuname.length}
+                  dicription={Item.description}
+                  />
                 );
               })}{" "}
           </Row>
         </Container>
        
+  
       </Container>
     </>
   );
