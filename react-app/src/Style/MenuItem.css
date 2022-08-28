@@ -1,5 +1,4 @@
-
-body{
+body {
   background-color: #f5f6f8;
 }
 
@@ -17,9 +16,7 @@ h1 {
 
 .container .hstack p {
   margin-bottom: 3px;
-
 }
-
 
 .card {
   width: 350px;
@@ -28,7 +25,6 @@ h1 {
   border-color: white;
   display: flex;
   justify-content: center;
-  
 }
 
 .card .card-img {
@@ -73,10 +69,10 @@ h1 {
   margin-bottom: 3px;
 }
 
-.card .card-body .hstack .hstack{
+.card .card-body .hstack .hstack {
   position: absolute;
   right: 0.5rem;
-  bottom:1.8rem;
+  bottom: 1.8rem;
 }
 
 .search-bar .dropdown .btn {
@@ -101,10 +97,39 @@ h1 {
 }
 .input-group .form-control::placeholder {
   color: black;
-  
 }
 
+.catgory {
+  background-color: white;
+  width: 200px;
+  border-radius: 8px;
+  height: 60px;
+  display: flex;
+  align-content: flex-end;
+  margin: auto 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.catgory .icon {
+  width: 25%;
+  height: auto;
+  border-radius: 5px;
+}
 
+svg.icon-tabler-bread {
+  background-color: #f4cbdf;
+}
 
+svg.icon-tabler-coffee {
+  background-color: #cddfec;
+}
+svg.icon-tabler-soup {
+  background-color: #e7dee3;
+}
 
+svg.icon-tabler-fish {
+  background-color: #d1d1ef;
+}
+svg.icon-tabler-list {
+  background-color: #d0eae3;
+}

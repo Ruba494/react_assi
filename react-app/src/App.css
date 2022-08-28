@@ -1,15 +1,14 @@
-.toggle-btn{
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    transform: rotate(90deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.toggle-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.toggle-btn svg{
-   margin: 5px;
-    transform: rotate(-90deg);
-    color: #000;
+.toggle-btn svg {
+  margin: 5px;
+  transform: rotate(-90deg);
+  color: #000;
 }

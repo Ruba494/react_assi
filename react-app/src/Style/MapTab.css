@@ -18,7 +18,6 @@
   background-color: #f4cbdf;
   border-color: #f4cbdf;
   color: white;
-  
 }
 
 .mapboxgl-popup {
@@ -26,8 +25,8 @@
 
   height: 2;
 }
-.mapboxgl-popup-tip{
-    display: none !important;
+.mapboxgl-popup-tip {
+  display: none !important;
 }
 .mapboxgl-popup .mapboxgl-popup-content {
   padding: 10px;
@@ -58,6 +57,3 @@
 .mapboxgl-popup .mapboxgl-popup-content .card-body {
   margin: 20px;
 }
-
-
-

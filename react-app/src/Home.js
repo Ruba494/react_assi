@@ -1,42 +1,30 @@
-import React from 'react'
-import MenuItem from './Components/MenuItem'
-import { useState, useEffect } from 'react';
+import React from "react";
+import MenuItem from "./Components/MenuItem";
+import { useState, useEffect } from "react";
 
 function Home() {
-  
   const [data, setData] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
- 
 
   useEffect(() => {
     fetch("https://foodbukka.herokuapp.com/api/v1/menu")
       .then((response) => response.json())
       .then((data) => {
         setData(data.Result);
-
       });
   }, []);
 
-
   useEffect(() => {
-    setMenuItems(data)
-   
-
-  }, [data])
-
+    setMenuItems(data);
+  }, [data]);
 
   return (
-
     <>
-  
-    <div>
-    
-    <MenuItem menuItems={menuItems}/>
-
-    </div>
-    
+      <div>
+        <MenuItem menuItems={menuItems} />
+      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

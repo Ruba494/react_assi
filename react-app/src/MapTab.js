@@ -6,7 +6,6 @@ import "./Style/DarkMode.css";
 import "./Style/MapTab.css";
 import "./Style/MenuItem.css";
 
-
 import geoJson from "./resturantsSample.json";
 import mapboxgl from "mapbox-gl";
 
@@ -51,8 +50,6 @@ const MapTab = () => {
             source: "points",
             layout: {
               "icon-image": "custom-marker",
-              // get the title name from the source's "title" property
-
               "text-offset": [0, 1.25],
               "text-anchor": "top",
             },
@@ -65,7 +62,6 @@ const MapTab = () => {
       // Copy coordinates array.
       const coordinates = e.features[0].geometry.coordinates.slice();
       const title = e.features[0].properties.title;
-      
 
       new mapboxgl.Popup()
         .setLngLat(coordinates)

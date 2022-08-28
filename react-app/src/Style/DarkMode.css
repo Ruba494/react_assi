@@ -44,3 +44,21 @@
 #dark .toggle-btn svg{
   color: #2a2c2d;
 }
+
+
+
+#dark .catgory.bread{
+  background-color: #f4cbdf;
+}
+#dark .catgory.coffe{
+  background-color:#CDDFEC;
+}
+#dark .catgory.soup{
+  background-color: #E7DEE3;
+}
+#dark .catgory.fish {
+  background-color: #D1D1EF;
+}
+#dark .catgory.list {
+  background-color: #D0EAE3;
+}
